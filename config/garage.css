@@ -1,0 +1,103 @@
+/**
+ * garage.css
+ */
+
+a:link, a:visited, a:active { 
+	color: blue ; 
+	text-decoration: underline; 
+}
+a:hover { 
+	color: blue ; 
+	text-decoration: underline; 
+}
+
+body, .normal {
+    font-size: 10pt; 
+    font-family: Verdana,Arial,Helvetica;
+    font-weight: normal; 
+    font-style: normal; 
+    color: black; 
+    margin-left: 1em; 
+    margin-right: 1em; 
+}
+table {
+    font-size: 10pt; 
+    font-family: Verdana,Arial,Helvetica;
+    color: black; 
+    vertical-align: middle;
+    margin-left: 0em; 
+    margin-right: 0em; 
+}
+td {
+    margin-left: 1em; 
+    margin-right: 1em; 
+}
+th {
+    vertical-align: bottom;
+    background-color: #D7D6D4 ;     /** Like headerRow */
+}
+ul {
+    list-style-type: square; 
+    list-style-position: outside;
+    font-size: 10pt; 
+    font-family: Verdana,Arial,Helvetica;
+    margin-left: 1em; 
+    margin-right: 1em;
+    padding-left: 0em; 
+    color: black; 
+}
+ol {
+    list-style-type: decimal;
+    list-style-position: outside;
+    font-size: 10pt; 
+    font-family: Verdana,Arial,Helvetica;
+    margin-left: 1em; 
+    padding-left: 0em; 
+    color: black; 
+}
+
+h1 {
+    font-size: 12pt; 
+    font-family: Verdana,Arial,Helvetica;
+    color: black; 
+}
+
+h2, h3 {
+    font-size: 10pt; 
+    font-family: Verdana,Arial,Helvetica;
+    color: black; 
+}
+
+pre, code {
+    font-family: courier; 
+    font-size: 10pt; 
+    color: DarkGreen; 
+}
+
+.footnote {
+    font-size: 8pt; 
+    font-weight: normal; 
+    font-style: normal; 
+    font-family: Verdana,Arial,Helvetica;
+    color: Navy; 
+}
+.deprecated {
+    font-weight: normal; 
+    font-style: normal; 
+    color: Red; 
+}
+.tbd {
+    font-weight: normal; 
+    font-style: normal; 
+    color: blue; 
+}
+
+.headerRow {
+    background-color: #D7D6D4 ;
+}
+.oddrow {
+    background-color: white;
+}
+.evenrow {
+    background-color: #E8EAEF;
+}

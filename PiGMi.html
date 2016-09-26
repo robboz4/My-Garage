@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> PiGMi Hardware Setup </title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="Keywords" content="Raspberry PI, Remote Control, Garage Doors" />
+<meta name="Description" content="Release Notes for PiGMi project." />
+<link rel="stylesheet" href="w3.css" />
+<link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.css" />
+<link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css" />
+</head>
+
+<body class="w3-container" >
+
+<div class="w3-container w3-border w3-round w3-blue" >
+    <h2>PiGMi Project Hardware Setup</h2>
+    September 25, 2016
+    <br/>&nbsp;
+</div>
+
+<div class="w3-container" >
+<p/>
+Pi Garage Monitor via Internet (PiGMi)
+
+<p/>
+PiGMi is a web based Garage door monitor/ controller. It allows the opening 
+and closing of garage door(s) remotely from a web browser on any device. It 
+has the ability to scale and rotate for mobile devices such as iPhones and 
+iPads.
+
+<div class="w3-container w3-border w3-round w3-blue w3-half" >
+    <b>Hardware Needed</b>
+</div><br clear="left" />
+
+<p/>
+Refer to the
+<a title="View BOM"
+href="https://github.com/robboz4/PiGMi/tree/master/Misc">PiGMi BOM and wiring</a>
+for a complete listing of parts needed and prices.  Adjust the purchases for
+the number of doors you want to control (from 1 to 3).
+
+<div class="w3-container w3-border w3-round w3-blue w3-half" >
+    <b>Hardware Setup</b>
+</div><br clear="left" />
+
+<p/>
+<ul>
+    <li> First, assemble 1 Raspberry Pi, with power-supply, WiFi enabled. </li>
+    <li> Verify or Load the required system software: </li>
+    <ul>
+        <li> Linux </li>
+        <li> Apache2 Web Server </li>
+        <li> PHP </li>
+        <li> <a title="Raspberry PI GPIO Reference" 
+            href="https://projects.drogon.net/raspberry-pi/wiringpi/the-gpio-utility/">GPIO-Utility</a> </li>
+        <li> <a title="Adafruit Reference" 
+            href="https://github.com/adafruit/Adafruit_Python_GPIO">Adafruit GPIO libraries</a>
+    </ul>
+
+    <li> Then for each door, wire up the relays, push buttons, and magnetic
+    switches in the following suggested numbering. (Please note:  You don't 
+    need to follow this exactly because you can assign the pins to doors from 
+    the web software).
+
+    <p/>
+    <img src="images/wiring.png" width="95%" />
+    </li>
+</ul>
+
+
+<div class="w3-container w3-border w3-round w3-blue w3-half" >
+    <b>Credits</b>
+</div><br clear="left" />
+<p/>
+Author:
+<br/> &nbsp; &nbsp; Dave Robinson 
+(<a title="Send an Email" href="mailto:robboz4@gmail.com">robboz4@gmail.com</a>)
+<br/> &nbsp;
+</body>
+</html>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="garage.xsl" ?>
+<!-- ===============================================================
+    garage.xml:   Defines the user's MyGarage settings.
+
+    Tom Milner ( email: tomkmilner@gmail.com )
+    Copyright (c) 2016, Tom Milner, all rights reserved
+    September 25, 2016
+
+==================================================================== -->
+<garage simulation="{{simulation}}" loglevel="{{loglevel}}" revised="{{revised}}" >
+
+<monitor>
+    <monitor-state>{{monitor-state}}</monitor-state>
+    <monitor-email>{{monitor-email}}</monitor-email>
+    <monitor-sms>{{monitor-sms}}</monitor-sms>
+    <email-from-account>{{email-from-account}}</email-from-account>
+    <email-from-passwd>{{email-from-passwd}}</email-from-passwd>
+</monitor>
+    
+<wait-times>
+    <open-wait>{{open-wait}}</open-wait>
+    <close-wait>{{close-wait}}</close-wait>
+</wait-times>
+
+<door>
+    <doorname>{{door0name}}</doorname>
+    <gpio-pinR>{{door0pinR}}</gpio-pinR>
+    <gpio-pinM>{{door0pinM}}</gpio-pinM>
+</door>
+<door>
+    <doorname>{{door1name}}</doorname>
+    <gpio-pinR>{{door1pinR}}</gpio-pinR>
+    <gpio-pinM>{{door1pinM}}</gpio-pinM>
+</door>
+<door>
+    <doorname>{{door2name}}</doorname>
+    <gpio-pinR>{{door2pinR}}</gpio-pinR>
+    <gpio-pinM>{{door2pinM}}</gpio-pinM>
+</door>
+
+</garage>

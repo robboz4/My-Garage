@@ -1,0 +1,48 @@
+/*
+ * mg.css
+ */
+
+div.door {
+    border-color: #E4E4E4 ;
+    border-radius: 25px;
+    border-style: solid;
+    float: left ;
+    margin: 5 auto;
+    padding: 8px 4px ;
+    text-align: center;
+}
+
+
+img {
+    display: block ;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.button-OLD {
+    -webkit-appearance: none;
+    display: inline-block;
+    cursor: pointer;
+    width: 90%;
+    margin: 0 auto;
+    padding: 7px 20px;
+    border: none;
+    border-radius: 10px;
+    /** device specific
+    background-color: lightblue;
+    color: black;
+    ***/
+    font-family: Verdana;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+
+.doorbox {
+    border-style: none ;
+    border-color: #3399ff ;
+    border-width: thick;
+    border-radius: 8px;
+}

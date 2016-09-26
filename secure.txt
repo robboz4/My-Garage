@@ -1,0 +1,9 @@
+secure.txt
+The presence of this file enables remote account creation.
+
+If this file exists, it allows a 1-time update of accounts (like at initial 
+installation).  Once used the file is automatically renamed to "xsecure.txt" 
+to prevent subsequent updates.
+
+You can manually rename this file back to "secure.txt" to allow 1-time
+account creation at a later time.

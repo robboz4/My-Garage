@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Release Notes </title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="Keywords" content="Raspberry PI, Remote Control, Garage Doors" />
+<meta name="Description" content="Release Notes for PiGMi project." />
+<link rel="stylesheet" href="w3.css" />
+<link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.css" />
+<link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css" />
+</head>
+
+<body class="w3-container" >
+
+<div class="w3-container w3-border w3-round w3-blue" >
+    <h2 style="display: inline;">PiGMi Project (aka "MyGarage")</h2>
+    <br/>September 26, 2016
+    <br/>&nbsp;
+</div>
+
+<div class="w3-container" >
+<p/>
+This is the website server to support a Raspberry PI garage door controller.
+It gives you the ability to open, close, and monitor your garage doors remotely
+using either a mobile or desktop browser platform (e.g., like an iPhone or 
+a Windows PC).
+
+<div class="w3-container w3-border w3-round w3-blue w3-half" >
+    <b>Installation &amp; Setup</b>
+</div><br clear="left" />
+<p/>
+After unzipping these files into the root of your Raspberry PI web server, you 
+will need to bring up the browser on the web server in order to enable you to 
+create users (that is, only when the browser has the same IP as the server can 
+you modify login credentials).  Create a Username and Password (and remember
+them).  If running the browser directly off the server is not possible, refer
+to the notes in "secure.txt" or "xsecure.txt" for an alternate security
+solution.
+
+<p/>
+Once logged in, verify code is working.  By default, the server starts in
+"Simulation Mode", so that you can play with it before attaching the hardware
+to the garage doors.  In this mode, the first door operates properly, but the 
+second and third doors, (if named), will always simulate the 2 modes of door 
+failure operation.
+
+<p/>
+Disable simulation mode by going to the Settings page (navigate from either 
+the menu or the gear logo).  Disable "Simulation Mode" and press the "Update" 
+button to enable "Real Mode" operation.
+
+<div class="w3-container w3-border w3-round w3-blue w3-half" >
+    <b>Door Monitor</b>
+</div><br clear="left" />
+<p/>
+Included in this package is a monitor program that watches whether the 
+doors have been opened/closed recently, and if so can send either email or 
+sms notification.  Through the settings screen the monitor can be activated
+("armed"), or disabled ("disarmed"), and the email or sms address configured.
+See the 
+<a title="GitHub" href="https://github.com/robboz4/PiGMiMon">GitHub Page</a> 
+for more details.
+
+<div class="w3-container w3-border w3-round w3-blue w3-half" >
+    <b>History &amp; Credits</b>
+</div><br clear="left" />
+<p/>
+Version 08-03-2016:
+<ul>
+    <li> Added toggle to arm/disable monitor action in settings.php.</li>
+</ul>
+
+<p/>
+Version 08-28-2016:
+<ul>
+    <li> Added Session support (login/logoff) </li>
+    <li> Menu in main page </li>
+    <li> Simple About page </li>
+    <li> Default config is just 1 door (only doors with non-blank names
+    are displayed) </li>
+</ul>
+
+<p/>
+Version 09-26-2016:
+<ul>
+    <li> Update to release notes and cleanup </li>
+</ul>
+
+<p/>
+Authors:
+<br/> &nbsp; &nbsp; 
+Dave Robinson 
+(<a title="Send an Email" href="mailto:Dave Robinson <robboz4@gmail.com>">robboz4@gmail.com</a>)
+<br/> &nbsp; &nbsp; 
+<a title="Home Page" href="http://tommilner.org/">Tom Milner</a>
+(<a title="Send an Email" href="mailto:Tom Milner <tomkmilner@gmail.com>">tomkmilner@gmail.com</a>)
+<br/> &nbsp;
+</body>
+</html>

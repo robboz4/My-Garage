@@ -1,0 +1,77 @@
+<!--
+    main.tem: MyGarage Template
+    Copyright (C) 2016, Tom Milner (tomkmilner@gmail.com)
+    All Rights Reserved
+    June 30, 2016
+    Version: {{Version}}
+-->
+
+<html>
+<head>
+<title> MyGarage </title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="Keywords" content="Raspberry PI, Remote Control, Garage Doors">
+<meta name="Description" content="Simple implementation of a remote-control garage door controller using a Raspberry PI with an embedded web server.">
+<link rel="stylesheet" href="mg.css" />
+<link rel="stylesheet" href="w3.css" />
+<link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.css" />
+<link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css" />
+<script src="lib/mg.js"></script>
+<script src="lib/ajax.js"></script>
+<script src="lib/menu.js"></script>
+
+<style>
+.version {
+    text-align: right;
+    float: right;
+    font-size: 8pt;
+    clear: right;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Menu -->
+<nav class="w3-sidenav w3-dark-grey w3-card-2" id="menuSideNav" 
+        style="display:none; width:40%;" >
+    <a href="javascript:void(0)" onclick="menu_close()" 
+        class="w3-large"> Close Menu <i class="fa fa-close" ></i> </a>
+    <hr style="width: 90%" />
+    <!-- Nav Links -->
+    <a href="javascript:void(0)" 
+        onClick="menu_go('settings.php');" >Settings</a>
+    <a href="javascript:void(0)" 
+        onClick="menu_go('logs/activity.log');" >View Log</a>
+    <a href="javascript:void(0)" onClick="menu_go('logout.php');" >Logout</a>
+    <hr style="width: 90%" />
+    <a href="javascript:void(0)" onClick="menu_go('about.html');" >About</a>
+</nav>
+
+<div id="main" >
+	<header class="w3-container w3-blue" >
+	    <h1 style="text-align: left; float: left;" ><a id="navIcon" 
+            title="Menu" 
+            href="javascript:menu_open()"><i class="fa fa-bars" ></i></a>
+            <xsl:value-of select="' '" />
+            <xsl:value-of select="' '" />MyGarage
+        </h1>
+	    <a title="Change Settings" href="settings.php"><i class="fa fa-cog fa-3x fa-fw" style="text-align:right; float:right;" ></i></a>
+	    <span class="version">{{Version}} / {{HVersion}}</span>
+	</header>
+	
+	<br/>
+	<div class="w3-row w3-padding-small" >
+	    {{Doors}}
+	</div>
+
+    <!-- No footer needed
+    <br/>
+    <footer class="w3-container w3-blue" >
+        &nbsp;
+    </footer> -->
+
+</div><!-- main -->
+</body>
+</html>
+
