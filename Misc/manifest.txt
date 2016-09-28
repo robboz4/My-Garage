@@ -1,0 +1,99 @@
+MyGarage Manifest (file list)
+
+¦   !Readme.html
+¦   about.html
+¦   ajax.php
+¦   index.php
+¦   login.php
+¦   loginverify.php
+¦   logm.php
+¦   logout.php
+¦   mg.css
+¦   PiGMi.html
+¦   secure.txt
+¦   settings.php
+¦   settingsA.php
+¦   w3.css
+¦
++---config
+¦       garage.css
+¦       garage.xsl
+¦       index.html
+¦
++---font-awesome-4.6.3
+¦   ¦   HELP-US-OUT.txt
+¦   ¦   index.html
+¦   ¦   Readme.html
+¦   ¦
+¦   +---css
+¦   ¦       font-awesome.css
+¦   ¦       font-awesome.min.css
+¦   ¦
+¦   +---fonts
+¦   ¦       fontawesome-webfont.eot
+¦   ¦       fontawesome-webfont.svg
+¦   ¦       fontawesome-webfont.ttf
+¦   ¦       fontawesome-webfont.woff
+¦   ¦       fontawesome-webfont.woff2
+¦   ¦       FontAwesome.otf
+¦   ¦
+¦   +---less
+¦   ¦       animated.less
+¦   ¦       bordered-pulled.less
+¦   ¦       core.less
+¦   ¦       fixed-width.less
+¦   ¦       font-awesome.less
+¦   ¦       icons.less
+¦   ¦       larger.less
+¦   ¦       list.less
+¦   ¦       mixins.less
+¦   ¦       path.less
+¦   ¦       rotated-flipped.less
+¦   ¦       screen-reader.less
+¦   ¦       stacked.less
+¦   ¦       variables.less
+¦   ¦
+¦   +---scss
+¦           font-awesome.scss
+¦           _animated.scss
+¦           _bordered-pulled.scss
+¦           _core.scss
+¦           _fixed-width.scss
+¦           _icons.scss
+¦           _larger.scss
+¦           _list.scss
+¦           _mixins.scss
+¦           _path.scss
+¦           _rotated-flipped.scss
+¦           _screen-reader.scss
+¦           _stacked.scss
+¦           _variables.scss
+¦
++---images
+¦       doorClosed.gif
+¦       doorClosing.gif
+¦       doorJammed.gif
+¦       doorObstacle.gif
+¦       doorOpened.gif
+¦       doorOpening.gif
+¦
++---lib
+¦       ajax.js
+¦       config.php
+¦       door.php
+¦       logger.php
+¦       macro.php
+¦       menu.js
+¦       mg.js
+¦       mgserver.php
+¦       session.php
+¦       webtoolkit.md5.js
+¦       xmlutil.php
+¦
++---logs
+¦       Readme.txt
+¦
++---templates
+        door.tem
+        garage.tem
+        main.tem
