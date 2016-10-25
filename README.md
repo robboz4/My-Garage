@@ -5,7 +5,7 @@ It gives you the ability to open, close, and monitor your garage doors remotely
 using either a mobile or desktop browser platform (e.g., like an iPhone or 
 a Windows PC).
 
-There are many versions of internet garage door monitors on the web, and commercial door operner manufcatures have released their own. This is Tom and Dave's version. The code has been deployed on a Raspberry Pi3 and Pi0 hardware with 1 and 3 monitored doors. There is a monitor program that can be configured with my-garage to give email and/or sms messages. Check the wiki (https://github.com/robboz4/My-Garage/wiki)for more details about the implemntation knows as PiGMi.
+There are many versions of internet garage door monitors on the web, and commercial door operner manufcatures have released their own. This is Tom and Dave's version. The code has been deployed on a Raspberry Pi3 and Pi0 hardware with 1 and 3 monitored doors. There is a monitor program that can be configured with my-garage to give email and/or sms messages. Check the  (<a href="https://github.com/robboz4/My-Garage/wiki"> wiki</a> for more details about the implemntation knows as PiGMi.
 
 
 
