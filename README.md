@@ -7,5 +7,5 @@ a Windows PC).
 
 
 
-<a title="Home Page" href="http://tommilner.org/">Tom Milner</a>
+(<a title="Home Page" href="http://tommilner.org/">Tom Milner</a>)
 (<a title="Send an Email" href="mailto:Tom Milner <tomkmilner@gmail.com>">tomkmilner@gmail.com</a>)
