@@ -9,8 +9,8 @@ There are many versions of internet garage door monitors on the web, and commerc
 
 
 
-(<a title="Home Page" href="http://tommilner.org/">Tom Milner - Home page</a>) 
+<a title="Home Page" href="http://tommilner.org/">Tom Milner - Home page</a>
 
-Send email to Tom: tomkmilner@gmail.com
+Send an email to Tom: tomkmilner@gmail.com
 
-(<a title="Send an Email" href="mailto:Dave Robinson <robboz4@gmail.com>"> Send email to Dave </a>)
+Send an Emailto Dave: robboz4@gmail.com>
