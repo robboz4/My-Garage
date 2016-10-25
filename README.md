@@ -13,4 +13,4 @@ There are many versions of internet garage door monitors on the web, and commerc
 
 Send an email to Tom: tomkmilner@gmail.com
 
-Send an Emailto Dave: robboz4@gmail.com>
+Send an Emailto Dave: robboz4@gmail.com
