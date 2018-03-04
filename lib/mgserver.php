@@ -278,7 +278,13 @@ class MgServer
                     return $state ;    // Door didn't move
                 }
 
+                // Dave's new Hack Here
 
+               $status = fopen("./status".$dx,w) or die("Unable to open file");
+               fwrite($status, "OPEN");
+               fclose($status);
+
+              // End of Hack
             } else {
                 // ---------------------
                 // Door Close Action
@@ -300,6 +306,15 @@ class MgServer
                     Logger::logMessage( $me, 0, "New State[$state] = Obstacle");
                     return $state ;    // Door didn't close
                 }
+                 // Dave's new Hack Here
+
+               $status = fopen("./status".$dx,w) or die("Unable to open file");
+               fwrite($status, "CLOSED");
+               fclose($status);
+
+              // End of Hack
+
+
             }
               // Normal return
             $text = $mg->mapState2Text( $newState );
