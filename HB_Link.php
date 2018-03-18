@@ -54,7 +54,20 @@
     //      Command routines follow
     // ------------------------------------------------
     
-  
+    /* Panic test routine
+     * HB.php?cmd=Panic
+     */
+     
+     function cmdPanic()
+     {
+     	
+     	global $me;
+     	Logger::panic( $me, "Test Panic from HB_Link.php" );
+     
+     
+     
+     
+     }
     
     /*
      * cmdOpen - Parameter is the door Id

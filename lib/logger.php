@@ -36,11 +36,12 @@
  * Revisions:
  *  07/11/2012: Initial
  *  07/07/2015: Add suffix to target file on rollover.
- *
+ *  03/18/2018: Added panic code email code from Tom Milner.
  */
 class Logger
 {
-    const Version = "07/07/2015" ;
+    const Version = "03/18/2018" ;
+    const DaveEmail = 'Dave the Man <robboz4@gmail.com>';
 
     public static $_priority = 0 ;               // logging threshold
     public static $_enableLogging = true ;
@@ -167,8 +168,83 @@ class Logger
         self::logMessage( "***PANIC***", -1,"*******************************" );
         self::logMessage( $fcn, -1, $msg );
         self::logMessage( "***PANIC***", -1,"*******************************" );
+        
+        // Build notification message
+        $to = self::DaveEmail;
+//        $to   = 'Dave Robinson <robboz4@gmail.com>' ;
+//        $from = 'Dave Robinson <robboz4@gmail.com>' ;
+        $from = self::DaveEmail;
+        $subject = 'Panic' ;
+
+        $CR = "\r\n" ;
+        $rule = '<hr color="lightgray" align="left" size="10" width="60%" >' ;
+        $style= ' style="font-family:verdana;font-size:10pt;"' ;
+        $size = '0' ;
+        if ( isset( $_SERVER['CONTENT_LENGTH'] ) ) {
+            $size = number_format( (int) $_SERVER['CONTENT_LENGTH'] );
+        }
+
+        $body = ''
+            . '<font size="+1">Panic</font>' . $CR
+            . $rule 
+            . '<br>Panic detected @ ' . self::getTimeStamp()  . ' PST' . $CR
+            . '<br>Function: <b>' . $fcn . '</b>, Message: "' . $msg . '"' . $CR
+            . '<p/>Http_User_Agent: ' . $_SERVER[ 'HTTP_USER_AGENT' ] 
+            . '<br>Content_Length: ' . $size   
+            . '<p/><pre>' . $CR
+            . self::getStackTrace() . $CR
+            . '</pre>' . $CR
+            . $rule . $CR
+            . '' ;
+        self::sendMail( $to, $from, $subject, $body );
+        //End of new code from Tom to email panic message
+        
+        
 
     }
+    
+    /**
+    * Sends an HTML email message.  Email address can be in the form:
+    * Tom Milner <tomkmilner@gmail.com>
+    *    or just
+    * tomkmilner@gmail.com
+    *
+    * The email body is automatically wrapped with <body> .. </body>
+    * tags and standard style applied.
+    *
+    * @param string $to         Comma separates list of addresses.
+    * @param string $from       Comma separates list of addresses.
+    * @param string $subject    Subject
+    * @param string $body       HTML email body.
+    */
+    public static function sendMail( $to, $from, $subject, $body )
+    {
+        $CR = "\r\n" ;
+
+          // To send HTML mail, the Content-type header must be set
+        $headers  = 'MIME-Version: 1.0' . $CR ;
+        $headers .= 'Content-type: text/html; charset=iso-8859-1' . $CR ;
+          // Additional headers
+        $headers .= 'From: ' . $from . $CR ;
+          // Surround body with style statements.  Note: Gmail only
+          // takes inline styles.  Using the body tag lets all other
+          // html tags inherit the style.
+        $body2 = '<body style="font-family:verdana;font-size:10pt;">'
+                . $body
+                . '</body>' ;
+
+        mail( $to, $subject, $body2, $headers );
+    }
+    
+    
+    // End of secod piece of new code from Tom.
+    
+    
+    
+    
+    
+    
+    
 
    /**
     * Logs an error message into the log.
