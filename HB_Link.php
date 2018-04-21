@@ -3,7 +3,7 @@
     HB_Link.php
     Copyright (C) 2018, Tom Milner, Dave Robinson
     All Rights Reserved
-    February 18, 2018
+    April 21, 2018
 
     General purpose Ajax target (see ajax.js) for Homebridge Link.
     Usage: HBLink.php?cmd="XYZ...", where "XYZ" is one of the 
@@ -79,9 +79,9 @@
                 throw new Exception( 'Missing arg "id"' );
             }
             $doorId = $_GET[ "id" ];  // Get Parameter
-
+            Logger::LogMessage( $me, 1, "Homebridge door open request for door: " . $doorId );
             $newState = MgServer::doAction( $doorId, 'Open' );
-
+              
 // Added this code to mgserver to keep everything in sync
 //            $status = fopen("status".$doorId,w) or die("Unable to open file");
 //            fwrite($status, "OPEN");
@@ -105,7 +105,7 @@
                 throw new Exception( 'missing arg "id"' );
             }
             $doorId = $_GET[ "id" ];  // Get Parameter
-
+            Logger::LogMessage( $me, 1, "Homebridge door close request for door: " . $doorId );
             $newState = MgServer::doAction( $doorId, 'Close' );
 
 // Added this code to mgserver to keep everything in sync.
